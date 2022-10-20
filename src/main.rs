@@ -17,7 +17,7 @@ use std::fs::File;
 
 
 fn main() {
-    let mut urano = Urano::new();
+    let _urano = Urano::new();
     let matches = App::new("Urano")
         .version(env!("CARGO_PKG_VERSION"))
         .about("A simple TO-DO App ")
@@ -46,7 +46,7 @@ fn main() {
 
         ).get_matches();
 
-
+        println!("{:?}", matches.value_of("add"));
     
 }
 
